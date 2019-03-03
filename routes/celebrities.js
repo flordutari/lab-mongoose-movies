@@ -24,4 +24,19 @@ router.get('/celebrities/:id', async (req, res, next) => {
   }
 });
 
+router.get('/new', (req, res, next) => {
+  res.render('celebrities/new');
+});
+
+router.post('/celebrities', async (req, res, next) => {
+  const { name, ocuppation, catchPhrase } = req.body;
+  const celebrity = { name, ocuppation, catchPhrase };
+  try {
+    await Celebrity.create(celebrity);
+    res.redirect('/celebrities');
+  } catch (error) {
+    next(error);
+  }
+});
+
 module.exports = router;
