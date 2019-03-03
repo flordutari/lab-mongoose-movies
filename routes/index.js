@@ -13,12 +13,12 @@ mongoose.connect('mongodb://localhost/celebrities', {
   reconnectTries: Number.MAX_VALUE
 });
 
-Celebrity.insertMany(data)
-  .then(result => {
-    console.log(result);
-    mongoose.connection.close();
-  })
-  .catch(err => console.log(err));
+// Celebrity.insertMany(data)
+//   .then(result => {
+//     console.log(result);
+//     mongoose.connection.close();
+//   })
+//   .catch(err => console.log(err));
 
 /* GET home page. */
 router.get('/', (req, res, next) => {

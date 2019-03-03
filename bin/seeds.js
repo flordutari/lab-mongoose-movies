@@ -1,18 +1,18 @@
 const celebrities = [
   {
-    name: 'Lionel Messi',
-    ocuppation: 'Football player',
-    catchPhrase: 'You are a bad milk'
+    name: 'Owen Wilson',
+    ocuppation: 'Actor',
+    catchPhrase: 'You are crazier than a road lizard.'
   },
   {
-    name: 'Luis Suarez',
-    ocuppation: 'Football player',
-    catchPhrase: 'Ramos, my teeth are sharp'
+    name: 'Jennifer Aniston',
+    ocuppation: 'Actress',
+    catchPhrase: 'There are no regrets in life, just lessons.'
   },
   {
-    name: 'Sergio Ramos',
-    ocuppation: 'Football player',
-    catchPhrase: 'Viva Andalucia'
+    name: 'Meryl Streep',
+    ocuppation: 'Actress',
+    catchPhrase: 'The minute you start caring about what other people think, is the minute you stop being yourself.'
   }
 ];
 
