@@ -2,23 +2,11 @@
 
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
 
 const Celebrity = require('../models/Celebrity');
 const Movie = require('../models/Movie');
 const data = require('../bin/seeds.js');
-const mongoose = require('mongoose');
-
-// mongoose.connect('mongodb://localhost/celebrities', {
-//   keepAlive: true,
-//   useNewUrlParser: true,
-//   reconnectTries: Number.MAX_VALUE
-// });
-
-mongoose.connect('mongodb://localhost/movies', {
-  keepAlive: true,
-  useNewUrlParser: true,
-  reconnectTries: Number.MAX_VALUE
-});
 
 // Celebrity.insertMany(data)
 //   .then(result => {

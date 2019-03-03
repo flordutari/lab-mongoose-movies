@@ -14,17 +14,7 @@ router.get('/celebrities', async (req, res, next) => {
   }
 });
 
-router.get('/celebrities/:id', async (req, res, next) => {
-  const { id } = req.params;
-  try {
-    const celebrity = await Celebrity.findById(id);
-    res.render('celebrities/show', celebrity);
-  } catch (error) {
-    next(error);
-  }
-});
-
-router.get('/new', (req, res, next) => {
+router.get('/celebrities/new', (req, res, next) => {
   res.render('celebrities/new');
 });
 
@@ -65,6 +55,16 @@ router.post('/celebrities/:id', async (req, res, next) => {
   try {
     await Celebrity.update(celebrity);
     res.redirect('/celebrities');
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.get('/celebrities/:id', async (req, res, next) => {
+  const { id } = req.params;
+  try {
+    const celebrity = await Celebrity.findById(id);
+    res.render('celebrities/show', celebrity);
   } catch (error) {
     next(error);
   }
