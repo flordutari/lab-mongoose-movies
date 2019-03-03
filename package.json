@@ -3,15 +3,37 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "start-dev": "nodemon -e js,json,hbs bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
-    "hbs": "~4.0.1",
+    "hbs": "^4.0.3",
     "http-errors": "~1.6.2",
-    "mongoose": "^5.4.15",
+    "mongoose": "^5.4.16",
     "morgan": "~1.9.0"
-  }
+  },
+  "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
+  "main": "app.js",
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flordutari/lab-mongoose-movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flordutari/lab-mongoose-movies/issues"
+  },
+  "homepage": "https://github.com/flordutari/lab-mongoose-movies#readme"
 }

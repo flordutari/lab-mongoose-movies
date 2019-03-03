@@ -10,7 +10,7 @@ const indexRouter = require('./routes/index');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/movies', {
+mongoose.connect('mongodb://localhost/celebrities', {
   keepAlive: true,
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE
